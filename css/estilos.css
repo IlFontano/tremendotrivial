@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    h1 {
+       font-family: 'Changa One', sans-serif;
+       font-weight: 300;
+       a {
+           text-decoration: underline;
+           color: #000;
+        }
+    }
+    h2 {
+       font-family: 'Changa One', sans-serif;
+       font-weight: 300;
+       }
+    h3 {
+       font-family: 'Changa One', sans-serif;
+       font-weight: 300;
+       a {
+           text-decoration: underline;
+           color: #000;
+        }
+       }
+    p {
+       font-family: 'Inter', sans-serif;
+        a {
+           text-decoration: underline;
+           color: #000;
+        }
+      }
+    ul li {
+       font-family: 'Inter', sans-serif;
+    }
+    form {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    label, button {
+            font-family: 'Changa One', 'Inter', sans-serif;
+            font-weight: 300;
+        }
+    select, input {
+           font-family: 'Inter', sans-serif;
+           width: 100%;
+           margin: 10px 0;
+           padding: 10px;
+           border-radius: 5px;
+           border: 1px solid #000;
+           }
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+     a {
+         text-decoration: none;
+         color: #000;
+         display: flex;
+         align-items: center;
+     }
+     #logo1 {
+         display: inline;
+     }
+     h1 {
+        display: inline;
+        font-family: "Changa One";
+        text-align: center;
+        padding: 0;
+     }
+}
+nav {
+    font-family: 'Changa One';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 300px);
+
+     ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        right: 0;
+        justify-content: flex-end;
+         li {
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #000;
+            a {
+                font-family: 'Changa One';
+                font-weight: 300;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Changa One', sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto;
+     p {
+       font-family: 'Inter', sans-serif;
+       font-weight: 300;
+       font-size: small;
+     }
+}
+#Trivial {
+    text-justify: auto;
+    margin: 0 15px;
+}
