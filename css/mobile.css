@@ -1,0 +1,272 @@
+body {
+    width: 100vw; /* Use 100% to fit within the parent container */
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Ensure no margin */
+}
+
+/* Text Styles */
+
+h1 {
+    font-family: 'Changa One', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+}
+
+h2, h3 {
+    font-family: 'Changa One', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+}
+    
+h1 a, h3 a, p a {
+    text-decoration: underline;
+    color: #000;
+}
+    
+p, ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    }
+
+/* General styles */
+
+/* Header styles */
+
+header {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%; /* Ensure full width */
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo, nav {
+    display:none;
+    width: 100%; /* Full width for both logo and nav */
+    text-align: center;
+    margin: 0; /* Ensure no margin */
+}
+
+#logo1 {
+    display: block; /* Change to block display */
+    margin: 0 auto; /* Center the logo */
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 0;
+}
+
+nav {
+    display:none;
+    margin-left: 0; /* Remove left margin */
+    font-family: 'Changa One'; /* Change font family */
+}
+
+nav ul {
+    margin-top: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Center the items */
+}
+
+nav ul li a {
+    font-family: 'Changa One';
+    font-size: larger;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Mobile menu styles */
+
+.menuboton {
+    display:flex;
+    background: none; /* Remove default background */
+    padding: 0; /* Remove default padding */
+    cursor:pointer;
+    border:none; /* Remove default border */
+    height:fit-content;
+    align-items: center;
+    align-content: center;
+}
+
+.menuboton img {
+    display:block; /* Ensure the image is displayed as a block element */
+    align-content: center;
+}
+
+.collapsible-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 3px;
+    justify-content: center;
+}
+
+.collapsible-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-menu a {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Changa One';
+    font-size: 48px;
+    color: black;
+    display:block;
+    text-decoration: none;
+    background-color:rgba(128, 128, 128, 0.322);
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    z-index: 1000;
+    transition: 1s ease-in-out;
+}
+
+.menu-content {
+    margin-top: 10px;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition */
+}
+
+.menu-content.expanded {
+    max-height: 500px; /* Adjust to a value that fits your content */
+}
+
+.menumobile {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure items are stacked vertically */
+}
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: small;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 100%;
+}
+
+/* Section styles */
+
+.titulos {
+    width: 100%; /* Use 100% to fit within the parent container */
+    text-align: center;
+    justify-content: center;
+    font-family: 'Changa One';
+    font-size: 3em;
+    color: black;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(214, 214, 214); /* Blended color */
+    padding: 12px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 0 auto; /* Center the element */
+}
+
+.contenido {
+    width: 95%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 0 auto; /* Center the section */
+}
+#contacto p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#Home img {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+#Home a {
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+/* Form styles */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80vw;
+    align-items: center;
+}
+
+form label{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    font-family: 'Changa One', 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    width: 80vw;
+    margin:15px 0;
+    padding:10px;
+}
+
+form button {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    font-family: 'Changa One', 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 2.25em;
+    width: auto;
+    margin:30px;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 3px solid #000;
+}
+
+select, input, textarea {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25em;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000;
+}
+
+::placeholder {
+    font-size:1.25em;
+}
