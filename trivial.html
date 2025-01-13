@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
     <head>
         <meta charset="UTF-8">
         <meta lang="es">
-        <meta viewport="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Aprende más sobre el trivial de Tremendo Trivial.">
 
-        <title>Tremendo Trivial | Inicio</title>
+        <meta property="og:title" content="Tremendo Trivial | El trivial">
+        <meta property="og:description" content="La web de Tremendo Trivial, el trivial más tremendo de
+        Valencia; entra, descubre cuándo es el próximo ¡y apúntate!">
+        <meta property="og:image" content="https://www.tremendotrivial.es/img/logo_trivialtiny.png">
+
+        <title>Tremendo Trivial | El trivial</title>
         
         <link rel="icon" type="image/png" href="img/logo_trivial.png">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    </head>
+        
+        <script src="scripts.js"></script>
+        </head>
     <body>
         <header>
-
              <div class="logo">
                 <a href="index.html">
                 <img id="logo1" src="img/logo_trivial.png"
@@ -23,7 +30,6 @@
                 <h1>TREMENDO TRIVIAL</h1>
              </a>
              </div>
-
              <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -33,10 +39,30 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
              </nav>
+             <div class="menumobile">
+                <div class="collapsible-menu">
+                    <button type="button" onclick="botonmenu()" class="menuboton" id="menuboton" name="menu">
+                        <img id="botonimg" src="img/logo_trivial.png" 
+                        height="100" width="100" alt="Menú">
+                    </button>
+
+                    <div class="menu-content">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="trivial.html">El trivial</a></li>
+                        <li><a href="proximos.html">Próximos</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    </div>
+                </div>
+             </div>
         </header>
+
         <section id="Trivial">
-            <h1>El Trivial</h1>
+            <h1 class="titulos">El Trivial</h1>
             <hr>
+            <div class="contenido">
             <h3>El funcionamiento</h3>
             <p>Aunque Albert lo explica de nuevo cada vez, no está de más dejar
                 por aquí el funcionamiento básico de nuestro trivial:</p>
@@ -44,25 +70,26 @@
                     <li>Jugamos por equipos, con un máximo de seis participantes
                         por equipo (si hay siete tampoco pasa nada, tampoco somos
                         unos fanáticos de las normas). Cada equipo tiene una hoja
-                        en la que irá escribiendo las respuestas.
+                        en la que irá escribiendo las respuestas.<br>
                     </li>
                     <li>Hay, normalmente, seis secciones: Actualidad; historia; ciencia;
                         cine, arte y literatura (o literatura, arte y cine);
-                        musiquitas y random.
+                        musiquitas y random.<br>
                     </li>
                     <li>Cada sección se compone de cinco preguntas, excepto
                         la de musiquitas, en la que Albert pone unos segundos
                         de una canción y los equipos deben adivinar el grupo
-                        o cantante que la interpreta.
+                        o cantante que la interpreta.<br>
                     </li>
+                    
                    <li>Al acabar cada sección, se le entrega la hoja a Albert, que
                     la corrige rapidísimo (en serio, tiene mucha práctica), tras lo
                     cual dirá las respuestas correctas y los puntos conseguidos por
-                    cada equipo.
+                    cada equipo.<br>
                    </li>
                    <li>Después de la última sección, random, en la que Albert
                     pregunta, como en todas las anteriores, lo que le da la gana,
-                    se da un segundo y un primer premio a los equipos ganadores.
+                    se da un segundo y un primer premio a los equipos ganadores.<br>
                    </li>
                    <li>En caso de empate, Albert se inventará una pregunta de
                     desempate.
@@ -84,6 +111,7 @@
                 básicamente reinvertimos en los premios, en esta web, en cenar y
                 en ibuprofeno. Podéis pagar en efectivo o por Bizum.
             </p>
+        </div>
         </section>
         <footer>
             <p>© 2025 Tremendo Trivial</p>
